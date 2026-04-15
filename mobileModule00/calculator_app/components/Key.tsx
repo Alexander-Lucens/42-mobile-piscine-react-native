@@ -1,6 +1,7 @@
 import { operations } from "@/components/Keyboard";
 import { styles } from "@/app/styles";
 import { Text, Pressable } from "react-native";
+import { KeyProps } from "@/types";
 
 function getLastIndexOfOperation(input: string) {
   return Math.max(
@@ -49,7 +50,7 @@ export default function Key({ value, input, setInput, valueStr, setValueStr }: K
 		  if (lastIndex === input.length - 1 && value === '00') {
 			value = '0';
 		  }
-		  if (input.slice(lastIndex + 1) === '0') {
+		  if (input.slice(lastIndex + 1) === '0' && value !== '.') {
 			setInput(input.slice(0, lastIndex + 1) + value);
 		  } else {
 			setInput((prev: string) => prev + value);

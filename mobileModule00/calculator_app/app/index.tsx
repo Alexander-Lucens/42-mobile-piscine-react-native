@@ -2,7 +2,7 @@ import { View, Text } from 'react-native';
 import { Stack } from 'expo-router';
 import { useState } from 'react';
 import { styles } from './styles';
-import Keyboard from '@/components/Keyboard';
+import Keyboard from '../components/Keyboard';
 
 export default function ModalScreen() {
   const [valueStr, setValueStr] = useState('0');
