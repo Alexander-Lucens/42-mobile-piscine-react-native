@@ -1,5 +1,5 @@
 {
-  "name": "weather_app",
+  "name": "medium_weather_app",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {

@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "weather_app",
-    "slug": "weather_app",
+    "name": "medium_weather_app",
+    "slug": "medium_weather_app",
     "version": "1.0.0",
     "orientation": "default",
     "icon": "./assets/images/icon.png",
-    "scheme": "weatherapp",
+    "scheme": "mediumweatherapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.anonymous.weather-app"
+      "bundleIdentifier": "com.anonymous.medium-weather-app"
     },
     "android": {
       "adaptiveIcon": {
@@ -20,7 +20,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.medium-weather-app"
     },
     "web": {
       "output": "static",
